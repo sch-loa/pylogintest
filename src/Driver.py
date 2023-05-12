@@ -83,5 +83,9 @@ class WebDriver(WebDriverEssentials):
             raise InvalidUsername()
         
         password_input.send_keys(password + Keys.RETURN)
-
     
+    def login_was_successful(self):
+        try:
+            self.wait.until(ec.url_to_be('https://twitter.com/home'))
+        except TimeoutException:
+            raise InvalidPassword()
