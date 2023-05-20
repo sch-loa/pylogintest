@@ -10,6 +10,8 @@ The two main test cases consist of one or two subcases:
   - Invalid username
   - Valid username, invalid password
 
+The credentials used for the tests were deleted and replaces with empty strings (which can be easily changed). The reason is that valid/invalid credentials can change overtime (a new account can be created, an existing ccount can be deleted).
+
 # Versions
 - **Python 3.11.1**
   - selenium 4.7.2
